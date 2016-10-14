@@ -33,6 +33,7 @@ The simplest configuration therefore consists of:
 ---
 - name: Simple Example
   hosts: localhost
+  become: yes
   roles:
     - { role: elasticsearch, es_instance_name: "node1" }
   vars:
